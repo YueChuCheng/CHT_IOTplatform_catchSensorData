@@ -1,0 +1,43 @@
+//use MQTT
+
+/*var mqtt = require('mqtt');
+var opt = {
+  port:1883,
+  clientId: '',
+  username:'PKEWGBE2EP47M509WG',
+  password:'PKEWGBE2EP47M509WG'
+};
+var io = require("socket.io"); //即時更新MQTT訊息頁的套件
+var express = require("express");
+var app = express();
+app.use(express.static('www'));
+var server = app.listen(3000);
+ 
+var client  = mqtt.connect('tcp://iot.cht.com.tw',opt);
+var sio = io.listen(server);
+ 
+client.on('connect', function () {
+  console.log('connected  ' + client.connected);
+  client.subscribe("/v1/device/19054266114/sensor/SNR/csv");
+
+});
+
+ 
+//handle incoming messages
+client.on('message',function(topic, message, packet){
+	console.log("message is "+ message);
+	console.log("topic is "+ topic);
+});
+
+
+var topic="/v1/device/19054266114/sensor/SNR/csv";
+var message="test message";
+//var topic_list=["topic2","topic3","topic4"];
+//var topic_o={"topic22":0,"topic33":1,"topic44":1};
+console.log("subscribing to topics");
+client.subscribe(topic,{qos:1}); //single topic
+//client.subscribe(topic_list,{qos:1}); //topic list
+//client.subscribe(topic_o); //object
+//var timer_id=setInterval(function(){publish(topic,message,opt);},5000);
+//notice this is printed even before we connect
+console.log("end of script");*/
